@@ -21,7 +21,7 @@
     parameters:
       - string:
           name: SCENARIO
-          description: "A full scenario name for ceph-ansible testing, like jewel-ansible2.2-purge_cluster"
+          description: "An existing scenario name in tox (eg: all_daemons)"
       - string:
           name: BRANCH
           description: "The ceph-ansible branch to test against"
@@ -46,10 +46,6 @@
           name: CEPH_DOCKER_IMAGE_TAG
           description: "The docker image tag used for containerized scenarios"
           default: "latest"
-      - string:
-          name: RELEASE
-          description: "The ceph release version used"
-          default: "dev"
       - string:
           name: DEPLOYMENT
           description: "Type of deployment: container or non_container"
